@@ -33,7 +33,7 @@ MSA는 흔히 모놀리식 아키텍처(Monolithic Architecture)와 많이 비�
 - 출시 기간 단축 => 각 서비스가 독릭접으로 배포되기 때문에, 전체 애플리케이션을 배포하지 않고 부분적으로 업데이트 가능. <br>
 - 높은 확장성 => 특정 요구사항에 대해 확장이 용이함. <br>
 - 결함 격리 => 각 서비스들이 독립적이기 때문에 하나의 서비스에 문제 있을 때 다른 서비스에 영향을 주지 않음. <br>
-- 손쉬운 배포 => 서비스의 규모가 작아졌기 때문에 배포에 따르는 우려가 없어짐.
+- 손쉬운 배포 => 서비스의 규모가 작아졌기 때문에 배포에 따르는 우려가 없어짐. <br>
 - 향상된 개방성 => 서비스 별로 다른 기술 스택 사용 가능. => 이로인해 각 서비스에 적합한 기술을 사용 가능. <br>
 
 단점
@@ -46,9 +46,13 @@ MSA는 흔히 모놀리식 아키텍처(Monolithic Architecture)와 많이 비�
 
 <br>
 
-### MSA의 동작 과정
+### API Gateway
 
-(진행중..)
+한개의 애플리케이션을 여러 개의 서비스로 나눔에따라 여러 서비스의 엔드포인트를 관리해야되는 어려움이 생긴다.
+
+API Gateway는 모든 API 서버의 엔드포인트를 관리할 수 있도록 해주고, API 호출 구조도 단순하게 해준다.
+
+뿐만 아니라 라우팅, 로드밸런싱, 인증 역할을 수행한다.
 
 <br>
 
@@ -56,4 +60,5 @@ Reference
 - https://www.redhat.com/ko/topics/microservices/what-are-microservices
 - https://docs.microsoft.com/ko-kr/azure/architecture/guide/architecture-styles/microservices
 - https://velog.io/@tedigom/MSA-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-1-MSA%EC%9D%98-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90-3sk28yrv0e
-- ..
+- https://sirupe.github.io/msa/
+- http://clipsoft.co.kr/wp/blog/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98msa-%EA%B0%9C%EB%85%90/
