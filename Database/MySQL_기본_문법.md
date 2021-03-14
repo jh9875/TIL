@@ -21,35 +21,51 @@ MySQL 기본 문법
 	  )
 	  ~~~
   - 예제 <br>
+	..
 
-- ALTER
-- DROP
-- RENAME
+- ALTER <br>
+- DROP <br>
+- RENAME <br>
 
 <br>
 
 ### 데이터 조작어 (DML)
 데이터베이스 사용자가 응용 프로그램이
 
-- SELECT 
-- INSERT
-- UPDATE
-- DELETE
+- SELECT : 테이블의 레코드를 선택할 때 사용. <br>
+  - 기본 형태 <br>
+	~~~SQL
+	SELECT 필드이름1, 필드이름2, ..
+	FROM 테이블이름
+	[WHERE 조건]
+	~~~
+  - 옵션 <br>
+    - 필드 정렬
+  
+- INSERT <br>
+- UPDATE <br>
+- DELETE <br>
 
 <br>
 
 ### 데이터 제어어 (DCL)
 
-- GRANT
-- REVOKE
+- GRANT <br>
+- REVOKE <br>
 
 <br>
 
 ### 트랜잭션 제어어 (TCL)
 
-- COMMIT
-- ROLLBACK
-- SAVEPOINT
+- COMMIT <br>
+- ROLLBACK <br>
+- SAVEPOINT <br>
+
+<br>
+
+### 집계 함수
+
+...
 
 <br>
 
