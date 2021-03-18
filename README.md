@@ -7,6 +7,7 @@ Today I Learned
 
 - **Java**
   - [JVM](Java/JVM.md)
+  - [GC](Java/GC.md)
   
 - **웹**
   - [RESTful API란?](Web/restful_api.md)
