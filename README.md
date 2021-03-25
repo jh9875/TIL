@@ -15,7 +15,7 @@ Today I Learned
 - **알고리즘 & 자료구조** <br>
   여기서 정리 중 👉 https://github.com/jh9875/Algorithm
 - **데이터베이스**
-  - [MySQL 기본 문법](Database/MySQL_문법)
+  - [MySQL 기본 문법](Database/MySQL_문법/README.md)
 - **운영체제**
 - **네트워크**
 - **디자인 패턴**
