@@ -13,7 +13,7 @@ FROM 테이블 이름
 [LIMIT]
 ~~~
 
-- SELECT : 원하는 열을 선택.
+- SELECT : 원하는 필드를 선택.
 - FROM : 원하는 테이블을 선택.
 - WHERE : 원하는 조건식을 넣어줌.
 - ORDER BY : 원하는 기준으로 결과를 정렬. <br>
