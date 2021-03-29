@@ -14,6 +14,10 @@ Today I Learned
   
 - **알고리즘 & 자료구조** <br>
   여기서 정리 중 👉 https://github.com/jh9875/Algorithm
+
+- **개발 서적 읽기** <br>
+  여기서 정리 중 👉 https://github.com/jh9875/Reading-Books
+
 - **데이터베이스**
   - [MySQL 문법](Database/MySQL_문법Intro.md)
 - **운영체제**

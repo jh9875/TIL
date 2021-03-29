@@ -28,4 +28,37 @@ FROM 테이블 이름
 
 - ETC <br>
   - DISTINCT : 중복된 결과를 제거.
-  - LIKE : 문자열의 내용을 검색.
+  
+  - LIKE : 문자열의 내용을 검색. <br>
+    - '%' <br>
+	  0글자 이상을 찾을 때 사용 <br>
+	  ~~~sql
+	  # 특정 문자가 들어간 데이터
+	  name LIKE "%특정문자%"
+	  # 특정 문자로 시작하는 데이터
+	  name LIKE "%특정문자"
+	  # 특정 문자로 끝나는 데이터
+	  name LIKE "특정문자%"
+	  ~~~
+    - '_' <br>
+	  1글자 찾을 때 사용 <br>
+	  ~~~sql
+	  # _부분엔 아무 한 글자 들어감
+	  name LIKE "특정_문자"
+	  ~~~
+
+  - REGEXP : 정규식을 사용하여 문자열의 내용을 검색. <br>
+    ~~~sql
+	# 진행 예정..
+	~~~
+
+  - CASE, WHEN, THEN, ELSE : 다중 조건문을 쓸 때 사용. (if, else if 와 비슷.) <br>
+	~~~sql
+	CASE
+		WHEN 조건1 THEN 반환 값1
+		WHEN 조건2 THEN 반환 값2
+		ELSE 위 조건에 해당되지 않는 경우 반환 값
+	END
+	~~~
+
+  - ...
