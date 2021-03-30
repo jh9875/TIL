@@ -49,7 +49,7 @@ FROM 테이블 이름
 
   - REGEXP : 정규식을 사용하여 문자열의 내용을 검색. <br>
     ~~~sql
-	# 진행 예정..
+	WHERE name REGEXP '정규식'
 	~~~
 
   - CASE, WHEN, THEN, ELSE : 다중 조건문을 쓸 때 사용. (if, else if 와 비슷.) <br>

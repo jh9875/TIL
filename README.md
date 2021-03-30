@@ -8,6 +8,7 @@ Today I Learned
 - **Java**
   - [JVM](Java/JVM.md)
   - [GC](Java/GC.md)
+  - [Java 정규표현식](Java/Java_정규표현식.md)
   
 - **웹**
   - [RESTful API란?](Web/restful_api.md)
@@ -26,7 +27,8 @@ Today I Learned
 - **소프트웨어 아키텍처**
 - **기타**
   - [CI/CD](Etc/CI_CD.md)
-  - [MSA](Software_architecture/MSA.md)
+  - [MSA](Etc/MSA.md)
   - [토이프로젝트](Etc/토이프로젝트.md)
+  - [정규표현식](Etc/정규표현식.md)
 
 
