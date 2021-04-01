@@ -6,9 +6,9 @@ Today I Learned
 ## 분류
 
 - **Java**
+  - [Java 문법](Java/Java_문법_Contents.md)
   - [JVM](Java/JVM.md)
   - [GC](Java/GC.md)
-  - [Java 정규표현식](Java/Java_정규표현식.md)
   
 - **웹**
   - [RESTful API란?](Web/restful_api.md)
@@ -20,7 +20,7 @@ Today I Learned
   여기서 정리 중 👉 https://github.com/jh9875/Reading-Books
 
 - **데이터베이스**
-  - [MySQL 문법](Database/MySQL_문법Intro.md)
+  - [MySQL 문법](Database/MySQL_문법_Contents.md)
 - **운영체제**
 - **네트워크**
 - **디자인 패턴**
