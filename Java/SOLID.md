@@ -18,7 +18,7 @@ SOLID란 객체지향 설계에서 지켜야 할 5가지원칙을 말한다.
 
 ### Single Responsibility Principle (단일 책임 원칙)
 
-단일 책임 원칙이란 하나의 소프트웨어 설계 부품 (클래스, 함수 등)은 하나의 책임만을 가져야 하는 원칙이다. 여기서 말하는 책임은 기능, 역할 정도로 해석하면 된다.
+단일 책임 원칙이란 하나의 **소프트웨어 설계 부품 (클래스, 함수 등)은 하나의 책임**만을 가져야 하는 원칙이다. 여기서 말하는 책임은 기능, 역할 정도로 해석하면 된다.
 
 SRP 원칙을 잘 지키면 클래스마다 기능이 잘 분배되어 있고, 하나의 클래스에 변화가 생길 때 다른 클래스에 영향을 최소화할 수 있다.
 
@@ -28,7 +28,53 @@ SRP 원칙을 잘 지키면 클래스마다 기능이 잘 분배되어 있고, �
 
 <br>
 
-### Open - Closed Principle (개발 - 폐쇄 원칙)
+### Open - Closed Principle (개방 - 폐쇄 원칙)
+
+소프트웨어 구성 요소는 **확장에 열려**있으나, **변경에는 닫혀**있어야 한다는 원칙이다. 즉, 기존의 코드는 변경하기 않고(Closed) 기능을 수정 및 추가(Opne) 할 수 있도록 해야 한다는 원칙이다.
+
+이 원칙을 지키기 위해서 **추상화**를 이용하는 방법이 있다.
+
+**변경되지 않는 핵심 개념**은 interface로 만들고 자주 변경될 수 있는 개념은 interface를 상속받아서 구현하면 된다.
+
+ex)
+~~~java
+interface playAlgorithm {
+	public void play();
+}
+class Wav implements playAlgorithm {
+	@Override
+	publci void play() {
+		System.out.println("Play Wav");
+	}
+}
+class Mp3 implements playAlgorithm {
+	@Override
+	public void play() {
+		System.out.println("Play Mp3");
+	}
+}
+
+class SoundPlayer {
+	private playAlgorithm file;
+
+	public void setFile(playAlgorithm file) {
+		this.file = file;
+	}
+	public void play() {
+		file.play();
+	}
+}
+
+public class Client {
+	public static void main(String[] args) {
+		SoundPlayer sp = new SoundPlayer();
+		sp.setFile(new Wav());
+		sp.setFile(new Mp3());
+		sp.play();
+	}
+}
+~~~
+코드 출처 : https://dev-momo.tistory.com/entry/SOLID-%EC%9B%90%EC%B9%99
 
 <br>
 
@@ -36,7 +82,7 @@ SRP 원칙을 잘 지키면 클래스마다 기능이 잘 분배되어 있고, �
 
 <br>
 
-### Interface Segregation Principle (인터페이스 분히 원칙)
+### Interface Segregation Principle (인터페이스 분리 원칙)
 
 <br>
 
@@ -50,6 +96,6 @@ SRP 원칙을 잘 지키면 클래스마다 기능이 잘 분배되어 있고, �
 Reference
 - https://ko.wikipedia.org/wiki/SOLID_(%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%EC%84%A4%EA%B3%84)
 - https://victorydntmd.tistory.com/291
-- https://velog.io/@lsb156/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%EA%B0%9C%EB%B0%9C-5%EB%8C%80-%EC%9B%90%EC%B9%99-SOLID
-- https://velog.io/@kyle/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-SOLID-%EC%9B%90%EC%B9%99-%EC%9D%B4%EB%9E%80
 - https://dev-momo.tistory.com/entry/SOLID-%EC%9B%90%EC%B9%99
+- https://velog.io/@lsb156/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%EA%B0%9C%EB%B0%9C-5%EB%8C%80-%EC%9B%90%EC%B9%99-SOLID
+
