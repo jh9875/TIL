@@ -80,15 +80,33 @@ public class Client {
 
 ### Liskov Substitution Principle (리스코프 치환 원칙)
 
+자식 클래스는 부모 클래스에서 가능한 행위를 수행할 수 있어야 한다는 원칙이다.
+
+자식 클래스가 부모 클래스를 대체하기 위해서는 부모의 기능에 대해 override 하지 않도록 해야 된다. <br>
+즉, 자식 클래스는 부모 클래스의 기능을 재정의 하지 않고 확장만 수행하도록 해야 된다.
+
 <br>
 
 ### Interface Segregation Principle (인터페이스 분리 원칙)
+
+사용하지 않는 인터페이스는 구현하면 안 된다.
+
+하나의 일반적인 인터페이스보다, 여러 개의 구체적인 인터페이스가 낫다. <br>
+즉 ISP 원칙은 **인터페이스의 단일 책임**을 강조한다.
 
 <br>
 
 ### Dependency Inversion Principle (의존관계 역전 원칙)
 
+의존관계를 맺을 때, 구체화에 의존하면 안 된고 추상화에 의존해야 한다.
 
+<img src ="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile2.uf.tistory.com%2Fimage%2F9993CF4D5BF7A8290F9519">
+
+이미지 출처 : https://victorydntmd.tistory.com/291
+
+ <br>
+
+위 이미지처럼 Client가 Cat, Dog, Bird보다 추상적인 Animal과 관계를 맺어야 한다.
 
 <br>
 
