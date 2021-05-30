@@ -12,7 +12,6 @@ Today I Learned
   - [JAR와WAR](Java/JAR와WAR.md)
   - [SOLID](Java/SOLID.md)
   - [객체지향_4대요소](Java/객체지향_4대요소.md)
-  - [디자인패턴](Java/디자인패턴.md)
 
 - **Framework**
   - [Spring](Framework/Spring_Contents.md)
@@ -32,6 +31,7 @@ Today I Learned
 - **운영체제**
 - **네트워크**
 - **디자인 패턴**
+  - [디자인패턴](Design_pattern/디자인패턴.md)
 - **소프트웨어 아키텍처**
 - **기타**
   - [CI/CD](Etc/CI_CD.md)
