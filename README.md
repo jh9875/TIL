@@ -6,7 +6,7 @@ Today I Learned
 ## 분류
 
 - **Error 노트**
-  - [Maven]
+  - [Maven](Error_note/Maven_Error.md)
 
 - **Java**
   - [Java 문법](Java/Java_문법_Contents.md)
