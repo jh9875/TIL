@@ -38,7 +38,7 @@ Apache Spark는 빅데이터 처리를 위한 오픈소스 고속 분산처리 �
 1개의 노드에선 Pandas와 Spark를 비교했을 땐 비교적 느릴 수 있다. => Spark는 확장성을 고려해서 설계했기 때문 <br>
 Pyspark는 수평적 확장이 가능하다. <br>
 
-Hadoopt MapReduce보다 메모리 상에선 100배, 디스크 상에선 10배 빠르다.
+Hadoop MapReduce보다 메모리 상에선 100배, 디스크 상에선 10배 빠르다.
 
 **Lazy Evaluation** : <br>
 태스크를 정의할때는 연산을 하지 않다가 결과가 필요할때 연산한다. <br>
